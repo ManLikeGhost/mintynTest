@@ -10,19 +10,19 @@ const index = () => {
         <div className="w-full flex items-center ml-4">
           <Input
             placeholder="Search"
-            prefix={<SearchOutlined style={{ fontSize: '16px' }} />}
-            className="w-full" 
+            prefix={<SearchOutlined style={{ fontSize: '16px', color:'#647787' }} />}
+            className="w-full text-major-color" 
           />
         </div>
       </div>
       <div className="flex items-center space-x-4">
-        <h6>Support</h6>
-        <h6>FAQ</h6>
+        <h6 className='text-major-color text-sm' >Support</h6>
+        <h6 className='text-major-color text-sm' >FAQ</h6>
         <Badge count={8} color='blue' size="small"> 
           <BellOutlined />
         </Badge>
         <div className="flex items-center space-x-2">
-          <h6>Hello, Oluwaleke Ojo</h6>
+          <h6 className='text-major-color text-sm'>Hello,<br></br> Oluwaleke Ojo</h6>
           <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size='large'/>
         </div>  
       </div>

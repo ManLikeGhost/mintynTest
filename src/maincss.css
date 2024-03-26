@@ -15,3 +15,6 @@ body {
 .logoHeader {
   font-family: "Roboto", sans-serif;;
 }
+.text-major-color {
+  color: #647787;
+}
