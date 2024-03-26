@@ -1,8 +1,14 @@
-
+import Navbar from '../../components/Navbar';
+import Sidebar from '../../components/Sidebar';
 const index = () => {
-  return (
-    <div>Dashboard</div>
-  )
-}
+	return (
+		<>
+			<Navbar />
+			<div className='bg-[#f7f8fa]'>
+				<Sidebar />
+			</div>
+		</>
+	);
+};
 
-export default index
+export default index;
