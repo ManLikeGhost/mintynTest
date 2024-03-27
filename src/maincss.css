@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @font-face {
   font-family: "Segoe UI";
   src: url("./assets/fonts/Segoe-UI.ttf");
@@ -9,4 +11,25 @@
 }
 body {
   font-family: "Segoe UI";
+}
+.logoHeader {
+  font-family: "Roboto", sans-serif;;
+}
+.text-major-color {
+  color: #647787;
+  font-weight: 700;
+}
+.text-color-blue {
+  color: #2860ec;
+  font-weight: 700;
+}
+
+.text-color-green {
+  color: #34ae60;
+  font-weight: 700;
+}
+
+.text-color-yellow {
+  color: #f9c204;
+  font-weight: 700;
 }
