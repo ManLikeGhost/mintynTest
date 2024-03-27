@@ -19,11 +19,11 @@ const Sidebar = () => {
     setActiveKey(key);
   };
   return (
-    <div className="top-0 left-0 h-screen w-[260px] bg-white shadow-md overflow-hidden">
-      <Menu mode="vertical" style={{ height: 'calc(100vh - 60px)' }}>
-        <Button type="Primary" shape="round" size='large' className='bg-[#34ae60] text-white m-4'>Generate Invoice</Button>
+    <div className="top-0 left-0 h-screen w-[260px] bg-white shadow-md overflow-hidden xs:hidden">
+      <Menu mode="vertical" >
+        <Button type="Primary" shape="round" size='large' className='bg-[#34ae60] text-white m-4 font-light'>GENERATE INVOICE</Button>
         <div className="flex justify-start m-6 ">
-          <Typography className="text-major-color">Main</Typography>
+          <Typography className="text-major-color font-light">Main</Typography>
         </div>
         <Menu.Item
           key="1"
@@ -33,12 +33,12 @@ const Sidebar = () => {
           {/* <Link to="/">  */}
             <div className="flex items-center space-x-4 p-2">
               <img src={OverviewIcon} alt='dashboard Icon' />
-              <Typography className="text-major-color">Overview</Typography>
+              <Typography className="text-major-color font-light">Overview</Typography>
             </div>
           {/* </Link> */}
         </Menu.Item>
         <div className="flex justify-start m-6 ">
-          <Typography className="text-major-color">Payments</Typography>
+          <Typography className="text-major-color font-light">Payments</Typography>
         </div>
         <Menu.Item
           key="2"
@@ -48,45 +48,45 @@ const Sidebar = () => {
           {/* <Link to="/payments">  */}
             <div className="flex items-center space-x-4 p-2">
               <img src={AllPayments} alt='dashboard Icon' />
-              <Typography className="text-major-color">All Payments</Typography>
+              <Typography className="text-major-color font-light">All Payments</Typography>
             </div>
           {/* </Link> */}
         </Menu.Item>
         <Menu.Item key="1">
           <div className="flex items-center space-x-4 p-2">
             <img src={RecPayments} alt='dashboard Icon' />
-            <Typography className="text-major-color">Reconcilled Payments</Typography>
+            <Typography className="text-major-color font-light">Reconcilled Payments</Typography>
           </div>
         </Menu.Item>
         <Menu.Item key="1">
           <div className="flex items-center space-x-4 p-2">
             <img src={UnRecPayments} alt='dashboard Icon' />
-            <Typography className="text-major-color">Un-Reconcilled Payments</Typography>
+            <Typography className="text-major-color font-light">Un-Reconcilled Payments</Typography>
           </div>
         </Menu.Item>
         <Menu.Item key="1">
           <div className="flex items-center space-x-4 p-2">
             <img src={ManSettlement} alt='dashboard Icon' />
-            <Typography className="text-major-color">Manual Settlement</Typography>
+            <Typography className="text-major-color font-light">Manual Settlement</Typography>
           </div>
         </Menu.Item>
-        <div className="flex justify-start m-6 "><Typography className="text-major-color">Orders</Typography></div>
+        <div className="flex justify-start m-6 "><Typography className="text-major-color font-light">Orders</Typography></div>
         <Menu.Item key="1">
           <div className="flex items-center space-x-4 p-2">
             <img src={AllOrders} alt='dashboard Icon' />
-            <Typography className="text-major-color">All Orders</Typography>
+            <Typography className="text-major-color font-light">All Orders</Typography>
           </div>
         </Menu.Item>
         <Menu.Item key="1">
           <div className="flex items-center space-x-4 p-2">
             <img src={PendOrders} alt='dashboard Icon' />
-            <Typography className="text-major-color">Pending Orders</Typography>
+            <Typography className="text-major-color font-light">Pending Orders</Typography>
           </div>
         </Menu.Item>
         <Menu.Item key="1">
           <div className="flex items-center space-x-4 p-2">
             <img src={RecOrders} alt='dashboard Icon' />
-            <Typography className="text-major-color">Reconcilled Orders</Typography>
+            <Typography className="text-major-color font-light">Reconcilled Orders</Typography>
           </div>
         </Menu.Item>
         <Menu.Item
@@ -97,11 +97,10 @@ const Sidebar = () => {
           {/* <Link to="/profile">  */}
             <div className="flex items-center space-x-4 p-2">
               <img src={MerchantProfile} alt='dashboard Icon' />
-              <Typography className="text-major-color">Merchant Profile</Typography>
+              <Typography className="text-major-color font-light">Merchant Profile</Typography>
             </div>
           {/* </Link> */}
-        </Menu.Item>
-        <Menu.Divider style={{ marginTop: '80%' }} /> 
+        </Menu.Item> 
       </Menu>
     </div>
   )

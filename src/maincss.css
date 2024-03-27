@@ -17,4 +17,19 @@ body {
 }
 .text-major-color {
   color: #647787;
+  font-weight: 700;
+}
+.text-color-blue {
+  color: #2860ec;
+  font-weight: 700;
+}
+
+.text-color-green {
+  color: #34ae60;
+  font-weight: 700;
+}
+
+.text-color-yellow {
+  color: #f9c204;
+  font-weight: 700;
 }
